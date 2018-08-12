@@ -11,5 +11,7 @@ public interface PersonService {
 	List<Person> savePerson(Person person);
 
 	List<Person> deletePerson(Person person);
+
+	List<Person> updatePerson(Person person);
 	
 }

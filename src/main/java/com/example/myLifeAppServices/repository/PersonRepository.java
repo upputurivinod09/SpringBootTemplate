@@ -33,13 +33,33 @@ public class PersonRepository {
 
 	public List<Person> savePerson(Person person) {
 		List<Person> persons = getPersons();
-		persons.add(person);
+		Person newPerson = new Person(person.getFirstName(), person.getLastName());
+		persons.add(newPerson);
 		return persons;
 	}
 
 	public List<Person> delete(Person person) {
 		List<Person> persons = getPersons();
 		persons.remove(person);
+		return persons;
+	}
+
+	public List<Person> update(Person updatePerson) {
+		List<Person> persons = getPersons();
+		
+//		Person deletePerson = persons.stream()
+//								.filter(p -> p.getId() == updatePerson.getId())
+//								.findFirst()
+//								.get();
+		Person deletePerson = null;
+		for(Person person: persons) {
+			if(person.getId().equals(updatePerson.getId())) {
+				deletePerson = person;
+			}
+		}
+		delete(deletePerson);
+		savePerson(updatePerson);
+		
 		return persons;
 	}
 	

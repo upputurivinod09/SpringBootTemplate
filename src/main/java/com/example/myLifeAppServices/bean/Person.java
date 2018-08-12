@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
+	private String id;
 
 	private String firstName;
 	private String lastName;
@@ -21,10 +22,17 @@ public class Person {
 		this.lastName = lastName;
 	}
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public Person(String firstName, String lastName) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.id = firstName.concat("-").concat(lastName);
 	}
 	
 	public Person() {

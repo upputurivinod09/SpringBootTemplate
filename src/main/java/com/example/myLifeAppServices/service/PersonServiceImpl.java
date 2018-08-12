@@ -32,4 +32,10 @@ public class PersonServiceImpl implements PersonService {
 		return personRepository.delete(person);
 	}
 
+
+	@Override
+	public List<Person> updatePerson(Person updatePerson) {
+		return personRepository.update(updatePerson);
+	}
+
 }
