@@ -1,12 +1,17 @@
-package com.example.myLifeAppServices.bean;
+package myLifeAppServices.bean;
+
+import javax.validation.constraints.NotNull;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
+	
 	private String id;
-
+	
+	@NotNull
 	private String firstName;
+	@NotNull
 	private String lastName;
 	
 	public String getFirstName() {

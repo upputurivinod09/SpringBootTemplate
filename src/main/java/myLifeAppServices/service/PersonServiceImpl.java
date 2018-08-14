@@ -1,12 +1,12 @@
-package com.example.myLifeAppServices.service;
+package myLifeAppServices.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.myLifeAppServices.bean.Person;
-import com.example.myLifeAppServices.repository.PersonRepository;
+import myLifeAppServices.bean.Person;
+import myLifeAppServices.repository.PersonRepository;
 
 @Service
 public class PersonServiceImpl implements PersonService {

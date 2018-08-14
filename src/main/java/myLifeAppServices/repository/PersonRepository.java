@@ -1,11 +1,11 @@
-package com.example.myLifeAppServices.repository;
+package myLifeAppServices.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.myLifeAppServices.bean.Person;
+import myLifeAppServices.bean.Person;
 
 @Repository
 public class PersonRepository {

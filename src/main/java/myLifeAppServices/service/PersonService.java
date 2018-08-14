@@ -1,8 +1,8 @@
-package com.example.myLifeAppServices.service;
+package myLifeAppServices.service;
 
 import java.util.List;
 
-import com.example.myLifeAppServices.bean.Person;
+import myLifeAppServices.bean.Person;
 
 public interface PersonService {
 

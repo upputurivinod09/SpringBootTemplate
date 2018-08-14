@@ -73,7 +73,7 @@
 				<directory>src/main/resources</directory>
 			</resource>
 			<resource>
-				<directory>../react/myLifeApp/dist</directory>
+				<directory>../../react/myLifeApp/dist</directory>
 				<targetPath>public/myLifeApp-ui</targetPath>
 			</resource>
 		</resources>

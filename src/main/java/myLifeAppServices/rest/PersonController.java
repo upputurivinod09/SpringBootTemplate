@@ -1,4 +1,4 @@
-package com.example.myLifeAppServices.rest;
+package myLifeAppServices.rest;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.myLifeAppServices.bean.Person;
-import com.example.myLifeAppServices.service.PersonService;
+import myLifeAppServices.bean.Person;
+import myLifeAppServices.service.PersonService;
 
 @RestController
 @RequestMapping("/person")
