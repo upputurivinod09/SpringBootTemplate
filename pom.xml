@@ -16,7 +16,6 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.1.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -26,8 +25,6 @@
 	</properties>
 
 	<dependencies>
-		<!--<dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-jdbc</artifactId> 
-			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -73,7 +70,7 @@
 				<directory>src/main/resources</directory>
 			</resource>
 			<resource>
-				<directory>../../react/myLifeApp/dist</directory>
+				<directory>../myLifeApp/dist</directory>
 				<targetPath>public/myLifeApp-ui</targetPath>
 			</resource>
 		</resources>
@@ -91,7 +88,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>myLifeApp</finalName>
-
 	</build>
 </project>
